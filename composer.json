@@ -1,0 +1,20 @@
+{
+  "name": "bekovski/facebook-bot-sdk",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Elias Bekovski",
+      "email": "eliasbekovski@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^6.2",
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeBot\\": "src"
+    }
+  }
+}
