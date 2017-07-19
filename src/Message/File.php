@@ -2,7 +2,7 @@
 
 namespace CodeBot\Message;
 
-Class Text implements Message
+Class File implements Message
 {
     private $recipientId;
 
@@ -19,8 +19,12 @@ Class Text implements Message
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $messageText,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'file',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
 
             ]
         ];
