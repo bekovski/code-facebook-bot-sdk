@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 class CallSendApi
 {
 
-    const URL = 'http://graph.facebook.com/v2.6/me/messages';
+    const URL = 'https://graph.facebook.com/v2.6/me/messages';
     private $pageAccessToken;
 
     public function __construct(string $pageAccessToken)
