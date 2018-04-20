@@ -9,9 +9,8 @@ class SenderRequest
 
     public function __construct()
     {
-        $event = file_get_contents("php://input");
-        $event = json_decode($event, true, 512, JSON_BIGINT_AS_STRING);
-        $this->event = $event['messaging'][0];
+        $event = json_decode(file_get_contents("php://input"), true, 512, JSON_BIGINT_AS_STRING);
+        $this->event = $event['entry'][0]['messaging'][0];
     }
 
     public function getSenderId()
