@@ -19,6 +19,6 @@ Class TextTest extends TestCase
 
             ]
         ];
-        $this->assertEquals($actual, $expected);
+        $this->assertEquals($expected, $actual);
     }
 }
